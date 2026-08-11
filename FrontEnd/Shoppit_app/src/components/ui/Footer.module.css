@@ -1,0 +1,11 @@
+.footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footerLink{
+    transition: color 0.2s ease;
+} 
+
+.footerLink:hover{
+    color: #6050DC !important;
+}

@@ -23,13 +23,13 @@ const Navbar = () =>{
           </button>
 
           <div className="collapse navbar-collapse" id="navbarContent">
-              <ul className="navbar-nav ms-auto ">
+              <ul className="navbar-nav ms-auto +">
                 <li className="nav-item me-3">
                     <Link className="nav-link" to="/" >Home</Link>
                 </li>
 
                 <li className="nav-item me-3">
-                  <Link className="nav-link" to="/Products">Products</Link>
+                  <Link className="nav-link" to="/products">Products</Link>
                 </li>
 
                 <li className="nav-item me-3">
