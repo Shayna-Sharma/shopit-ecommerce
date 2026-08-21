@@ -1,13 +1,17 @@
-import Navbar from "./components/ui/Navbar";
-import Footer from "./components/ui/Footer"
+import { Routes, Route } from "react-router-dom";
+import MainLayout from "./layout/MainLayout";
+import Home from "./components/Home/Home";
+import NotFoundPage from "./components/ui/NotFoundPage";
 
-function App(){
-    return(
-        <>
-        <Navbar/>
-        <Footer/>
-        </>
-    )
-}
+const App = () => {
+    return (
+        <Routes>
+            <Route path="/" element={<MainLayout />}>
+                <Route index element={<Home />} />
+                <Route path="*" element={<NotFoundPage />} />
+            </Route>
+        </Routes>
+    );
+};
 
 export default App;
