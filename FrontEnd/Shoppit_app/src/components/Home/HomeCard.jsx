@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import styles from "./HomeCard.module.css";
+import { API_BASE_URL } from "../../api";
 
 const HomeCard = ({ product }) => {
     return (
@@ -12,7 +13,7 @@ const HomeCard = ({ product }) => {
 
                     <div className={styles.imageWrapper}>
                         <img
-                            src={product.image}
+                            src={`${API_BASE_URL}${product.image}`}
                             alt={product.name}
                             className={styles.image}
                         />
