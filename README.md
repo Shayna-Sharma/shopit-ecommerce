@@ -4,74 +4,99 @@
 
 ## 📌 Overview
 
-ShopIT is a modern full-stack e-commerce web application being built using **Django** and **React**. The project focuses on developing a scalable shopping platform with secure authentication, product management, shopping cart functionality, and order processing while following clean software architecture and RESTful API design.
+ShopIT is a full-stack e-commerce web application being developed using **Django, Django REST Framework, and React**.
 
-The objective of this project is to gain hands-on experience in building production-style web applications using modern full-stack technologies.
+The project focuses on building a complete shopping platform with product management, RESTful APIs, a React-based frontend, shopping cart functionality, order processing, and user authentication.
+
+The objective of this project is to gain hands-on experience in building production-style web applications using modern full-stack technologies while following clean component-based architecture and REST API design.
 
 ---
 
 ## 🚀 Tech Stack
 
 ### Frontend
-- React.js
-- JavaScript
-- HTML5
-- CSS3
-- Vite
+
+* React.js
+* JavaScript
+* HTML5
+* CSS3
+* Vite
+* Axios
 
 ### Backend
-- Python
-- Django
-- Django REST Framework
+
+* Python
+* Django
+* Django REST Framework
 
 ### Database
-- SQLite *(Development)*
-- PostgreSQL *(Planned)*
+
+* SQLite *(Development)*
+* PostgreSQL *(Planned)*
 
 ### Tools
-- Git
-- GitHub
+
+* Git
+* GitHub
 
 ---
 
 ## ✨ Current Features
 
 ### Backend
-- Custom User Model
-- User Authentication
-- Product Model
-- Product Categories
-- Slug Generation for Products
-- Django REST Framework Integration
-- REST APIs for Product Data
+
+* Custom User Model
+* Product Model
+* Product Categories
+* Automatic Slug Generation for Products
+* Product Image Upload and Media Handling
+* Django Admin Product Management
+* Django REST Framework Integration
+* REST API for Product Data
+* JSON-based API Responses
 
 ### Frontend
-- React + Vite Setup
-- Component-Based Architecture
-- Responsive UI Development
-- API Integration (In Progress)
+
+* React + Vite Setup
+* Component-Based Architecture
+* Reusable Product Card Components
+* Responsive Product Grid
+* Axios API Integration
+* Product Data Fetching from Django Backend
+* Product Listing Page
+* Dynamic Product Information Rendering
+* Product Images Loaded from Django Media Files
+* React Router Integration for Product Links
+
+### Full-Stack Integration
+
+* React frontend connected with Django REST API
+* Product data fetched from the backend using Axios
+* Backend product data stored in React state
+* Product data passed between React components using props
+* Dynamic rendering of products using `.map()`
+* Django media files displayed in the React frontend
 
 ---
 
 ## 🚧 Features Under Development
 
-- User Registration & Login
-- Product Listing Page
-- Product Details Page
-- Shopping Cart
-- Wishlist
-- Checkout
-- Order Management
-- Payment Integration
-- User Dashboard
-- Search & Filtering
-- Admin Product Management
+* User Registration & Login
+* Product Details Page
+* Shopping Cart
+* Wishlist
+* Checkout
+* Order Management
+* Payment Integration
+* User Dashboard
+* Search & Filtering
+* Product Reviews & Ratings
 
 ---
 
 ## 📂 Project Structure
 
-```
+```text
 ShopIT-Ecommerce/
 │
 ├── FrontEnd/
@@ -85,6 +110,7 @@ ShopIT-Ecommerce/
 │   ├── Core_app/
 │   ├── shop_app/
 │   ├── ShopIT/
+│   ├── media/
 │   ├── manage.py
 │   └── ...
 │
@@ -109,23 +135,43 @@ git clone https://github.com/yourusername/shopit-ecommerce.git
 cd ShopIT
 
 python -m venv .venv
+```
 
-# Windows
+#### Windows
+
+```bash
 .venv\Scripts\activate
+```
 
-# Linux / macOS
+#### Linux / macOS
+
+```bash
 source .venv/bin/activate
+```
 
+Install dependencies:
+
+```bash
 pip install -r requirements.txt
+```
 
+Apply database migrations:
+
+```bash
 python manage.py migrate
+```
 
+Start the Django development server:
+
+```bash
 python manage.py runserver
 ```
 
 ---
 
 ### Frontend Setup
+
+Open another terminal and run:
 
 ```bash
 cd FrontEnd/Shoppit_app
@@ -135,35 +181,40 @@ npm install
 npm run dev
 ```
 
+The frontend and backend run as separate development servers and communicate through the REST API.
+
 ---
 
 ## 🎯 Learning Objectives
 
 This project is being developed to strengthen practical knowledge of:
 
-- Django
-- Django REST Framework
-- React
-- REST APIs
-- Authentication
-- Database Design
-- Full Stack Development
-- Git & GitHub
-- Software Architecture
+* Django
+* Django REST Framework
+* React
+* Axios and HTTP API communication
+* REST API Design
+* Component-Based Architecture
+* React State and Props
+* Database Design
+* Authentication
+* Full Stack Development
+* Git & GitHub
+* Software Architecture
 
 ---
 
 ## 📈 Future Improvements
 
-- JWT Authentication
-- Docker Deployment
-- Redis Caching
-- Product Reviews & Ratings
-- Recommendation System
-- Email Notifications
-- Payment Gateway Integration
-- CI/CD Pipeline
-- Cloud Deployment
+* JWT Authentication
+* Docker Deployment
+* Redis Caching
+* Recommendation System
+* Email Notifications
+* Payment Gateway Integration
+* CI/CD Pipeline
+* Cloud Deployment
+* PostgreSQL Production Database
 
 ---
 
